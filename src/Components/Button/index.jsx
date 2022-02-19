@@ -1,7 +1,7 @@
 import { ButtonSty } from "./styled";
 
-const Button = ({ children }) => {
-  return <ButtonSty>{children}</ButtonSty>;
+const Button = ({ children, onClick }) => {
+  return <ButtonSty onClick={onClick}>{children}</ButtonSty>;
 };
 
 export default Button;
